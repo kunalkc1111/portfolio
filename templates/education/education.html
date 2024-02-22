@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+}<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolie Website</title>
+</head>
+<body>
+    {% block baseblock %}
+        <div class="education" id="education">
+            <h3 class="heading">My <span>Journey</span></h3>
+            <div class="edu-container">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-user-graduate"></i>
+                    </div>
+                    <div class="box-content">
+                        <h3>Ramrao Adik Institute of Technology, Navi Mumbai</h3>
+                        <h5>BE-IT 2016-2020</h5>
+                        <p>Completed my Graduation in 2020 with Information Technology.</p>
+                        <h5>6.71</h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-building-columns"></i>
+                    </div>
+                    <div class="box-content">
+                        <h3>Dhote Bandhu Science College, Gondia</h3>
+                        <h5>HSC 2015-2016</h5>
+                        <p>Completed my Higher Secondary School in 2016 with Science-IT. </p>
+                        <h5>69%</h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-school"></i>
+                    </div>
+                    <div class="box-content">
+                        <h3>Gondia Public School, Gondia</h3>
+                        <h5>SSC 2013-2014</h5>
+                        <p>Completed my Secondary School from Gondia Public School in 2014. </p>
+                        <h5>9.2</h5>
+                    </div>
+                    <!-- <div class="box-content">
+                        <h3>Gondia Public School, Gondia</h3>
+                        <h5>SSC 2013-2014</h5>
+                        <p>Completed my Secondary School in 2014.</p>
+                        <h5>9.2</h5>
+                    </div> -->
+                </div>
+            </div> 
+        </div>
+    {% endblock %}
+</body>
+</html>

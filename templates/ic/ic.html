@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+}<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolie Website</title>
+</head>
+<body>
+    {% block baseblock %}
+        <div class="education" id="blur">
+            <h3 class="heading">Internships & <span>Certifications</span></h3>
+            <div class="edu-container">
+                <div class="box1">
+                    <div class="box-content">
+                        <h3>Responsive Web Design</h3>
+                        <h5>June 2023</h5>
+                        <p>In this course I learn the languages that are use to build webpages: HTML (Hypertext Markup Language) for content and CSS (Cascading Style Sheets) for design.
+                        </p>
+                        <div class="icon">
+                            <a href="#" onclick="toggle()" class="a-icon"><i class="fa fa-computer-mouse"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box-content">
+                        <h3>Scientific Computing with Python</h3>
+                        <h5>June 2023</h5>
+                        <p>In this course I l learn Python fundamentals like variables, loops, conditionals, functions, complex data structures,
+                            networking, relational databases, and data visualization.</p>
+                        <div class="icon">
+                            <a href="#" onclick="toggle()" class="a-icon"><i class="fa fa-computer-mouse"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box-content">
+                        <h3>Machine Learning with Python</h3>
+                        <h5>June 2023</h5>
+                        <p>In this course I learn TensorFlow framework to build several neural networks and explore more advanced techniques
+                            like natural language processing and reinforcement learning.</p>
+                        <div class="icon">
+                            <a href="#" onclick="toggle()" class="a-icon"><i class="fa fa-computer-mouse"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+    {% endblock %}
+    {% block jsblock %}
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active')
+                var popup = document.getElementById('image-popup');
+                popup.classList.toggle('active')
+            }
+        </script>
+    {% endblock %}
+</body>
+</html>

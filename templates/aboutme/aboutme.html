@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% block baseblock %}
+    <div class="aboutme">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="aboutme-img">
+            <img src="{% static 'images/aboutbg.png' %}">
+            <span class="img-circle"></span>
+        </div>
+        <div class="about-content">
+            <h3>Graduate IT Engineer</h3>
+            <p>Greetings! I am KUNAL CHAURE a highly motivated and dedicated engineering graduate with a passion for
+                technology and problem-solving. I have completed my graduation from Ramrao Adik
+                Institute of technology, Navi Mumbai in Information Technology. I bring a unique blend of creativity, technical expertise, and a keen eye
+                for detail to every skill I undertake. With a solid foundation in Information Technology and practical
+                experience gained during my one-year tenure at an IT-based company, I was on a career break to explore
+                new opportunities and focus on personal growth.<br>
+                <br>
+                During my time at the IT company, I had the privilege of being part of a dynamic team that tackled
+                complex software development projects. Working on diverse projects allowed me to expand my technical
+                skills and foster an innovative mindset. From collaborating on cutting-edge solutions to troubleshooting
+                intricate coding challenges, I thrived in an environment that encouraged continuous learning and
+                creativity.<br>
+                <br>
+                During this hiatus, I have actively pursued opportunities for self-improvement and growth. I have taken
+                online courses to stay updated with the latest industry trends and technologies, which has broadened my
+                skillset and deepened my expertise.<br>
+                <br>
+                My time away from the corporate world has reinforced my commitment to finding a meaningful and
+                fulfilling career path. I am eager to bring my technical expertise, problem-solving abilities, and
+                innovative mindset to a forward-thinking organization that values creativity, diversity, and positive
+                impact.<br>
+                <br>
+                I am excited about the possibilities that lie ahead and look forward to exploring new avenues where I
+                can contribute my skills and make a difference. If you are interested in connecting or have any
+                opportunities you'd like to discuss, feel free to <a href="/portfolio/resume"><span>reach out</span></a>. Let's embark on this journey of growth and
+                discovery together!<br>
+                <!-- a passionate and dedicated IT engineer. I bring a unique blend of creativity, technical expertise, and a
+                keen eye for detail to every skill I undertake. I have completed my graduation from Ramrao Adik
+                Institute of technology, Navi Mumbai in Information Technology. What truly fuels my drive is the ability
+                to combine my love for coding with my passion for learning new technologies. Whether it's crafting
+                engaging user experiences, designing captivating visuals, or solving complex problems, I thrive on the
+                challenge of pushing boundaries and creating solutions that make a real impact. About my professional
+                experience, I have worked in IT company as an Associate Software Developer with over 1 year of
+                experience in PYTHON, TESTING and requirements ANALYSIS. Background in commercial test automation and
+                lean manufacturing with a focus on testing complex application and agile project management and also
+                worked on creating chatbot for website like farmetrix. I take pride in my ability to communicate
+                effectively and collaborate seamlessly with clients and teams, fostering strong relationships built on
+                trust and open dialogue. I believe that listening attentively to client needs and understanding their
+                vision is key to delivering tailor-made solutions that align perfectly with their objectives. In
+                addition to my professional achievements, I have been honored by different Communnity with
+                certifications in my college. These milestones have not only validated my expertise but have also
+                motivated me to continuously learn and grow in my field. When I'm not immersed in my work, you can often
+                find me exploring the latest industry trends/tech, learning new tech. I am a firm believer in sharing
+                knowledge and giving back to the creative community that has inspired me throughout my career. I invite
+                you to explore my portfolio, where you'll find a showcase of my previous work and projects. If you have
+                any questions, or if you're interested in collaborating on a project, please don't hesitate to get in
+                touch by clicking <a href="/portfolio/resume"><span>LET'S TALK</span></a>. I look forward to connecting
+                with you and discussing how I can help bring your vision to life.-->
+            </p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

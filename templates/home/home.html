@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolie Website</title>
+</head>
+<body>
+    {% block baseblock %}
+        <div class="home">
+            <h4>Welcome to my portfolio, I'm</h4>
+            <div class="text-animate">
+                <h1>KUNAL CHAURE</h1>
+            </div>
+            <h4 class="summary">
+                <ul class="summary">
+                    <li>A <span>Full-Stack Developer</span>, with a passion for creating impactful WEB SERVICES.</li> <br>
+                    <li>Take a look around and explore my portfolio.</li><br>
+                    <li>Here, you'll find a collection of my best work that showcases my skills, <br>creativity, and attention to detail.</li><br>
+                    <li>From stunning visual designs to innovative user experiences.</li><br>
+                    <li>I'm committed to bringing the same level of excellence to your project.</li><br>
+                    <li>I look forward to connecting with you and creating something extraordinary.</li><br>
+                </ul>
+            </h4>
+            
+            <div class="btn-box">
+                <!-- <a href="#" class="btn">Hire Me</a> -->
+                <a href="/portfolio/resume" class="btn">Let's Talk</a>
+            </div>
+            <div class="homeimg">
+                <!-- <img src="{% static 'images/bg3.png' %}" class="homeimg-img" align="right"> -->
+            </div>
+        </div>
+    {% endblock %}
+</body>
+</html>
